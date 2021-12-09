@@ -6,4 +6,9 @@ namespace SimpleCqrs.Tests.Models
     {
 
     }
+
+    public class TestCommandWithReturnValue : ICommand<string>
+    {
+
+    }
 }

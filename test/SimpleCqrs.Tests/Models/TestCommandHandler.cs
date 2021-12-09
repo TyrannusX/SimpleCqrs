@@ -10,4 +10,12 @@ namespace SimpleCqrs.Tests.Models
 
         }
     }
+
+    public class TestCommandHandlerWithReturnValue : ICommandHandler<TestCommandWithReturnValue, string>
+    {
+        public async Task<string> HandleAsync(TestCommandWithReturnValue command)
+        {
+            return "hello world";
+        }
+    }
 }
